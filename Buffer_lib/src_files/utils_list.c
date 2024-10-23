@@ -37,7 +37,7 @@ void	list_delone(t_list *node, void (*del)(void *))
 {
 	if (node == NULL)
 		return ;
-	if (del)
+	if (del != NULL && node->content != NULL)
 		del(node->content);
 	free(node);
 }

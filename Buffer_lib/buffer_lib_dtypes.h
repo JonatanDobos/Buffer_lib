@@ -28,4 +28,25 @@ typedef struct s_list_twoway
 	struct s_list_twoway	*next;
 }	t_list_twoway;
 
+typedef struct s_circ_ptr
+{
+	void	**array;
+	size_t	size;
+	size_t	index[2];
+}	t_circ_ptr;
+
+typedef struct s_circ_char
+{
+	char	*array;
+	size_t	size;
+	size_t	index[2];
+}	t_circ_char;
+
+typedef struct s_circ_int
+{
+	int		*array;
+	size_t	size;
+	size_t	index[2];
+}	t_circ_int;
+
 #endif
